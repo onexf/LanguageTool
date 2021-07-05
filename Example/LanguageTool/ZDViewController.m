@@ -7,7 +7,7 @@
 //
 
 #import "ZDViewController.h"
-
+#import "LanguageTool.h"
 @interface ZDViewController ()
 
 @end
@@ -18,6 +18,10 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+//    [[LanguageTool languageBundle] localizedStringForKey:(key) value:@"" table:nil]
+    
+    [[LanguageTool languageBundle] localizedStringForKey:@"" value:@"" table:nil];
 }
 
 - (void)didReceiveMemoryWarning
